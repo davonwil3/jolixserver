@@ -9,7 +9,7 @@ mongoose.connect(process.env.MONGODB_URI, {useNewUrlParser: true, useUnifiedTopo
 
 app.use(express.json());
 app.use(cors({
-    origin: 'http://localhost:3000', // Adjust this to match your front-end URL
+    origin: 'https://jolix.onrender.com', // Adjust this to match your front-end URL
     credentials: true,
   }));
 

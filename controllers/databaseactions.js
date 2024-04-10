@@ -15,6 +15,7 @@ const addUser = async (req, res) => {
 
 const newProject = async (req, res) => {
     let { name, content, firebaseUid } = req.body;
+    console.log('New project:', name, content, firebaseUid);
 
     if (!name || !content) {
         name = 'Untitled Project';
